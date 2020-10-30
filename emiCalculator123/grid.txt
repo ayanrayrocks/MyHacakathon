@@ -1,0 +1,15 @@
+java -jar selenium-server-standalone-3.141.59.jar -role hub -port 5555
+
+
+java  -Dwebdriver.gecko.driver="C:\drivers\geckodriver.exe" -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://192.168.29.71:5555/grid/register/ -port 5567
+
+java -Dwebdriver.chrome.driver="C:\drivers\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://192.168.29.71:5555/grid/register/ -port 5566
+
+Right Click on the class, select Run--> Run configuration
+By default one testNg class will be generated with same class name under testng option
+Select that class and go to Arguments tab
+In the VM arguments provide -Dtestng.dtd.http=true
+
+java -jar jenkins.war
+C:\Program Files\Java\jdk1.8.0_261
+C:\apache-maven-3.6.3

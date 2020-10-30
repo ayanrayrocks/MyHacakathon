@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Home]">
+  <test thread-count="5" name="HomeLoan(failed)">
+    <classes>
+      <class name="testCases.TestHome">
+        <methods>
+          <include name="getStarted"/>
+          <include name="testTwo" invocation-numbers="0"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- testCases.TestHome -->
+    </classes>
+  </test> <!-- HomeLoan(failed) -->
+</suite> <!-- Failed suite [Test Home] -->
